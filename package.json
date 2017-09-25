@@ -1,5 +1,5 @@
 {
-    "name": "IDnowPlugin",
+    "name": "idnowplugin",
     "version": "0.0.1",
     "description": "IDnow cordova plugin",
     "cordova": {
