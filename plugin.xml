@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-idnow" version="0.0.1" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools">
+    <name>IDnowPlugin</name>
+    <asset src="www/IDnowPlugin.js" target="js/IDnowPlugin.js"/>
+    <js-module name="IDnowPlugin" src="www/IDnowPlugin.js">
+        <clobbers target="IDnowPlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="IDnowPlugin">
+                <param name="android-package" value="com.idnow.plugin.IDnowPlugin" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" mode="merge">
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        </config-file>
+        <source-file src="src/android/IDnowPlugin.java" target-dir="src/com/idnow/plugin/" />
+        <framework src="src/android/IDnowPlugin.gradle" custom="true" type="gradleReference"/>
+        <!-- Common String values - default to English -->
+        <resource-file src="src/android/strings_idnow.xml" target="res/values/strings_idnow.xml" />
+       <!-- Proguard file for obfuscation rules -->
+        <resource-file src="src/android/proguard-rules.pro" target="proguard-rules.pro" />
+        <!-- IDnow SDK -->
+        <resource-file src="src/android/idnow-android-3.2.1.aar" target="libs/idnow-android-3.2.1.aar" />
+    
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="IDnowPlugin">
+                <param name="ios-package" value="IDnowPlugin" />
+            </feature>
+        </config-file>
+
+        <preference name="CAMERA_USAGE_DESCRIPTION" default="This app needs camera access"/>
+            <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+                <string>$CAMERA_USAGE_DESCRIPTION</string>
+            </config-file>
+
+        <preference name="MICROPHONE_USAGE_DESCRIPTION" default="This app needs microphone access"/>
+            <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+                <string>$MICROPHONE_USAGE_DESCRIPTION</string>
+            </config-file>
+            
+        <framework src="IDnowSDK" type="podspec" spec="~> 3.1.1" />
+        <source-file src="src/ios/IDnowPlugin.m" />
+    </platform>
+</plugin>

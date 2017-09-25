@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="permission_empty">At least one permission is required</string>
+    <string name="unknown_permission_error">Unknown error while requesting permission</string>
+    <string name="permission_request_denied">Permission request has been denied</string>
+
+</resources>

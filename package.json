@@ -1,0 +1,19 @@
+{
+    "name": "IDnowPlugin",
+    "version": "0.0.1",
+    "description": "IDnow cordova plugin",
+    "cordova": {
+        "id": "cordova-plugin-idnow",
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "keywords": [
+        "IDnow ID Verification",
+        "IDnow plugin",
+        "cordova-plugin-idnow"
+    ],
+    "author": "Vinothkumar Arputharaj, Sakthivel",
+    "license": ""
+}
