@@ -1,6 +1,7 @@
 {
     "name": "idnowplugin",
-    "version": "0.0.1",
+    "version": "0.0.2",
+    "cordova_name": "IDnowPlugin",
     "description": "IDnow cordova plugin",
     "cordova": {
         "id": "cordova-plugin-idnow",
@@ -8,6 +9,10 @@
             "android",
             "ios"
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vino4all/cordova-plugin-idnow.git"
     },
     "keywords": [
         "IDnow ID Verification",
