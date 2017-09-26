@@ -1,6 +1,6 @@
 {
     "name": "idnowplugin",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "cordova_name": "IDnowPlugin",
     "description": "IDnow cordova plugin",
     "cordova": {
@@ -19,7 +19,8 @@
         "IDnow plugin",
         "cordova-plugin-idnow"
     ],
-    "author": "Vinothkumar Arputharaj, Sakthivel",
+    "author": "Vinothkumar Arputharaj",
+    "contributors": "Sakthivel",
     "licenses": [{
         "type": "MIT",
         "url": "https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT"
