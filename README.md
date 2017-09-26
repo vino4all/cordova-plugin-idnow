@@ -10,7 +10,7 @@ To start the video identification, use the below code.
         var apiHost = 'https://gateway.test.idnow.de';
         var showVideoOverviewCheck = true;
         var showErrorSuccessScreen = true;
-        IDNowPlugin.startVideoIdent(companyId, transactionToken, apiHost, showVideoOverviewCheck, showErrorSuccessScreen, successCallback, failureCallback);
+        IDnowPlugin.startVideoIdent(companyId, transactionToken, apiHost, showVideoOverviewCheck, showErrorSuccessScreen, successCallback, failureCallback);
 ```
 
 Define your successcallback and failurecallback functions
