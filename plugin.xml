@@ -25,7 +25,7 @@
        <!-- Proguard file for obfuscation rules -->
         <resource-file src="src/android/proguard-rules.pro" target="proguard-rules.pro" />
         <!-- IDnow SDK -->
-        <resource-file src="src/android/idnow-android-3.2.1.aar" target="libs/idnow-android-3.3.0.aar" />
+        <resource-file src="src/android/idnow-android-3.9.0.aar" target="libs/idnow-android-3.9.0.aar" />
     
     </platform>
     <platform name="ios">
@@ -45,7 +45,7 @@
                 <string>$MICROPHONE_USAGE_DESCRIPTION</string>
             </config-file>
             
-        <framework src="IDnowSDK" type="podspec" spec="~> 3.4.0" />
+        <framework src="IDnowSDK" type="podspec" spec="~> 3.9.0" />
         <source-file src="src/ios/IDnowPlugin.m" />
     </platform>
 </plugin>

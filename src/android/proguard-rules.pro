@@ -16,8 +16,6 @@
 #   public *;
 #}
 
-# Referred from https://github.com/idnow/de.idnow.android/blob/master/proguard-rules.pro
-
 -optimizationpasses 5
 -dontusemixedcaseclassnames
 -dontskipnonpubliclibraryclasses
